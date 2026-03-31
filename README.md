@@ -349,3 +349,19 @@ For questions and support:
 ---
 
 **Note**: This is a Proof of Concept (PoC) implementation. Production deployment requires additional security audits, compliance reviews, and infrastructure hardening.
+
+## Task: Market Summary Endpoint
+
+Added a new endpoint:
+
+GET /api/market/summary
+
+### Changes:
+- Added getMarketSummary in market.controller.js
+- Registered new route in market.routes.js
+
+### Response fields:
+- tokensListed
+- totalTrades
+- totalVolume
+- generatedAt
